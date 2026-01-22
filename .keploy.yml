@@ -1,0 +1,57 @@
+# Keploy Configuration File
+# This file configures Keploy's behavior for this repository
+
+# Enable Keploy for this repository
+enabled: true
+
+# Test generation settings
+test_generation:
+  # Automatically generate tests for PRs
+  auto_generate: true
+  
+  # Minimum coverage threshold
+  min_coverage: 80
+  
+  # Focus on edge cases
+  edge_case_detection: true
+
+# Test quality settings
+quality:
+  # Ensure all generated tests build and pass
+  verify_build: true
+  verify_pass: true
+  
+  # Prevent flaky tests
+  no_flaky_tests: true
+
+# PR integration settings
+pr_integration:
+  # Comment on PRs with test suggestions
+  comment_on_pr: true
+  
+  # Do not create commits with generated tests
+  auto_commit: false
+  
+  # Labels to add when tests are generated
+  labels:
+    - "tests-added"
+    - "keploy-generated"
+
+# File patterns to include/exclude
+patterns:
+  # Include these file types for test generation
+  include:
+    - "**/*.js"
+    - "**/*.ts"
+    - "**/*.py"
+    - "**/*.go"
+    - "**/*.java"
+  
+  # Exclude these paths
+  exclude:
+    - "**/node_modules/**"
+    - "**/vendor/**"
+    - "**/dist/**"
+    - "**/build/**"
+    - "**/*.test.*"
+    - "**/*.spec.*"
