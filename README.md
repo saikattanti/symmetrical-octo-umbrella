@@ -6,7 +6,7 @@ This repository has Keploy installed - an AI-powered Unit Testing Agent that gen
 
 ### Why Keploy?
 
-So that your reviewer stops asking "where are the tests?" 🙄
+Ensures comprehensive test coverage for all code changes, automating test generation to maintain quality standards without manual effort.
 
 ### What Keploy Ensures
 

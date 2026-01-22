@@ -29,7 +29,7 @@ pr_integration:
   # Comment on PRs with test suggestions
   comment_on_pr: true
   
-  # Create commits with generated tests
+  # Do not create commits with generated tests
   auto_commit: false
   
   # Labels to add when tests are generated
